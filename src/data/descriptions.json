@@ -1,0 +1,165 @@
+{
+    "openai": {
+        "max_tokens": {
+            "title": "max_tokens 参数检测说明",
+            "description": "此检测通过设置较小的 max_tokens 值（10）来观察模型的输出限制处理。官方API会严格遵守token限制，而逆向会忽略此限制。",
+            "focus_points": [
+                "官方API：输出将严格限制在10个token以内",
+                "逆向API：会遵循prompt输出完整的重复内容，超过token限制",
+                "当前prompt：'输出 'deepseek number 1' 5次'",
+                "检测参数设置：max_tokens=10"
+            ]
+        },
+        "reasoning_max_tokens": {
+            "title": "推理模型专用 max_tokens 参数检测说明",
+            "description": "此检测针对推理模型（如o1等），通过设置较小的max_tokens值（10）观察模型输出限制。官方API会严格遵守token限制，而逆向会完整输出响应内容。",
+            "focus_points": [
+                "官方API：message.content内容为空或极短",
+                "逆向API：message.content会生成完整内容",
+                "当前prompt：输出 'deepseek number 1' 5次",
+                "检测参数设置：max_tokens=10"
+            ]
+        },
+        "logprobs": {
+            "title": "logprobs 参数检测说明",
+            "description": "此参数在官方API中支持，而逆向实现会不支持该参数。",
+            "focus_points": [
+                "官方API：会返回每一个token的logprobs信息，也就是每个token的概率",
+                "逆向API：只会回答prompt的问题，不会返回logprobs信息",
+                "当前prompt：'hello!",
+                "检测参数设置：logprobs=true,top_logprobs=2"
+            ]
+        },
+        "n": {
+            "title": "n 参数检测说明",
+            "description": "通过设置n=2测试模型是否能正确返回多个不同的回答。官方API会返回两个回答，而逆向实现只会返回一个回答。",
+            "focus_points": [
+                "官方API：返回两个回答",
+                "逆向API：返回一个回答",
+                "当前prompt：'Hello!'",
+                "检测参数设置：n=2"
+            ]
+        },
+        "stop": {
+            "title": "stop 参数检测说明",
+            "description": "测试模型是否正确实现了停止序列功能。当遇到停止词时，官方API会立即停止生成，而逆向会忽略此参数输出完整内容。",
+            "focus_points": [
+                "官方API：遇到'4'时会立即停止生成",
+                "逆向API：会生成完整的数字序列",
+                "当前prompt：'Count from 1 to 10'"
+            ]
+        },
+        "image_url": {
+            "title": "image_url 参数检测说明",
+            "description": "测试模型对图像URL输入的处理能力。官方API能正确处理图像输入并生成相关描述，而逆向实现可能无法处理或返回错误。",
+            "focus_points": [
+                "官方API：能正确解析图像并生成相关描述",
+                "逆向API：可能无法处理图像URL或返回错误信息",
+                "当前prompt：'这是一张什么图片'",
+                "image_url: https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png",
+                "注意！image_url参数已被大多数中转商单独处理，带image_url参数的请求走官方渠道（或通过逆向脚本上传图片），所以该参数检测结果不可信"
+            ]
+        },
+        "function_call": {
+            "title": "function_call 参数检测说明",
+            "description": "测试模型对函数调用的处理能力。官方API能准确解析和执行函数调用，而逆向就不会调用函数。",
+            "focus_points": [
+                "官方API：准确返回函数执行的参数",
+                "逆向API：不会使用函数调用",
+                "当前prompt：'Whats the weather like in Boston today?'",
+                "注意！function_call参数已被众多中转商单独处理，带function_call参数的请求走官方渠道，所以该参数检测结果不可信"
+            ]
+        },
+        "response_format": {
+            "title": "response_format 参数检测说明",
+            "description": "测试模型对响应格式的支持。官方API能正确返回指定格式的响应，而逆向只会返回字符串。",
+            "focus_points": [
+                "官方API：返回为json格式",
+                "逆向API：普通字符串格式",
+                "当前prompt：'给我一个名字和年龄吧'",
+                "注意！response_format参数已被某些中转商单独处理，带response_format参数的请求走官方渠道，所以该参数检测结果不可信"
+            ]
+        }
+    },
+    "claude": {
+        "max_tokens": {
+            "title": "max_tokens 参数检测说明",
+            "description": "此检测通过设置较小的 max_tokens 值（10）来观察模型的输出限制处理。官方API会严格遵守token限制，而逆向实现可能会忽略此限制。",
+            "focus_points": [
+                "官方API：输出将严格限制在10个token以内",
+                "逆向API：会遵循prompt输出完整的重复内容，超过token限制",
+                "当前prompt：'输出 'deepseek number 1' 5次'",
+                "检测参数设置：max_tokens=10"
+            ]
+        },
+        "reasoning_stop": {
+            "title": "推理模型专用 stop 参数检测说明",
+            "description": "此检测针对Claude推理模型，通过设置stop参数为['3']观察模型的推理过程如何展示。官方API会在消息内容中正确停止生成，推理内容不受影响。",
+            "focus_points": [
+                "官方API：message.content内容不含有字符'3'",
+                "逆向API：message.content内容包含完整数字序列，包括'3'",
+                "当前prompt：'Count from 1 to 10 with Arabic numerals'",
+                "检测参数设置：stop=['3']"
+            ]
+        },
+        "stop": {
+            "title": "stop 参数检测说明",
+            "description": "测试模型是否正确实现了停止序列功能。当遇到停止词时，官方API会立即停止生成，而逆向会忽略此参数输出完整内容。",
+            "focus_points": [
+                "官方API：遇到'4'时会立即停止生成",
+                "逆向API：会生成完整的数字序列",
+                "当前prompt：'Count from 1 to 10'"
+            ]
+        },
+        "function_call": {
+            "title": "tools 参数检测说明",
+            "description": "测试模型对函数调用的处理能力。官方API能准确解析和执行函数调用，而逆向就不会调用函数。",
+            "focus_points": [
+                "官方API：准确返回函数执行的参数",
+                "逆向API：不会使用函数调用",
+                "当前prompt：'Whats the weather like in Boston today?'",
+                "注意！tools参数已被众多中转商单独处理，带tools参数的请求走官方渠道，所以该参数检测结果不可信"
+            ]
+        }
+    },
+    "gemini": {
+        "max_tokens": {
+            "title": "max_tokens 参数检测说明",
+            "description": "此检测通过设置较小的 max_tokens 值（10）来观察模型的输出限制处理。官方API会严格遵守token限制，而逆向实现可能会忽略此限制。",
+            "focus_points": [
+                "官方API：输出将严格限制在10个token以内",
+                "逆向API：会遵循prompt输出完整的重复内容，超过token限制",
+                "当前prompt：'输出 'deepseek number 1' 5次'",
+                "检测参数设置：max_tokens=10"
+            ]
+        },
+        "codeExecution": {
+            "title": "codeExecution 参数检测说明",
+            "description": "Gemini官方的API内置代码执行工具，会自动编写并执行代码，然后基于代码执行结果进行回答。",
+            "focus_points": [
+                "官方API：因为执行了代码，所以结果比较准确，为5117",
+                "逆向API：可能是其他数字",
+                "当前prompt：要求前50个指数的和，即'What is the sum of the first 50 prime numbers? Generate and run code for the calculation, and make sure you get all 50'"
+            ]
+        },
+        "googleSearch": {
+            "title": "googleSearch 参数检测说明",
+            "description": "Gemini官方的API内置谷歌搜索工具。官方API能正确返回调用谷歌搜索后的结果。",
+            "focus_points": [
+                "官方API：会返回今天的日期",
+                "逆向API：不为今天的日期",
+                "当前prompt：'今天是几月几号'"
+            ]
+        },
+        "response_format": {
+            "title": "response_format 参数检测说明",
+            "description": "测试模型对响应格式的支持。官方API能正确返回指定格式的响应，而逆向只会返回字符串。",
+            "focus_points": [
+                "官方API：返回为json格式",
+                "逆向API：普通字符串格式",
+                "当前prompt：'给我一个名字和年龄吧'",
+                "注意！response_format参数已被某些中转商单独处理，带response_format参数的请求走官方渠道，所以该参数检测结果不可信"
+            ]
+        }
+    }
+}

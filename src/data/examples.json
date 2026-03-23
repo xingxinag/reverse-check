@@ -1,0 +1,1259 @@
+{
+  "openai": {
+    "max_tokens": {
+      "reverse": {
+        "id": "chatcmpl-5478735d-4e52-492a-935e-5d2f5e2bd664",
+        "object": "chat.completion",
+        "created": 1740733120,
+        "system_fingerprint": "fp_494464e1cbeb",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "deepseek number 1  \ndeepseek number 1  \ndeepseek number 1  \ndeepseek number 1  \ndeepseek number 1  "
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 11,
+          "completion_tokens": 30,
+          "total_tokens": 41
+        }
+      },
+      "official": {
+        "id": "chatcmpl-B5ciMnnnBD4JOKqlxqbV6Ju4mw3nn",
+        "object": "chat.completion",
+        "created": 1740680158,
+        "model": "gpt-4o-2024-11-20",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "好的，以下是输出 `'deepseek number ",
+              "refusal": null
+            },
+            "logprobs": null,
+            "finish_reason": "length"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 18,
+          "completion_tokens": 10,
+          "total_tokens": 28,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_178d5ba2c0"
+      }
+    },
+    "logprobs": {
+      "reverse": {
+        "id": "chatcmpl-a8cf55be-a34a-4a8f-8342-2646ac4ceff5",
+        "object": "chat.completion",
+        "created": 1740733338,
+        "model": "gpt-4o",
+        "provider": "NiansuhAI",
+        "system_fingerprint": "fp_4151a65e5332",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "Hello! How can I assist you today?"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 2,
+          "completion_tokens": 9,
+          "total_tokens": 11
+        }
+      },
+      "official": {
+        "id": "chatcmpl-B5qYR17RXblmgllUhW1FMGFb40pnY",
+        "object": "chat.completion",
+        "created": 1740733359,
+        "model": "gpt-4o-2024-08-06",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "Hello! How can I assist you today?",
+              "refusal": null
+            },
+            "logprobs": {
+              "content": [
+                {
+                  "token": "Hello",
+                  "logprob": -0.47408080101013184,
+                  "bytes": [
+                    72,
+                    101,
+                    108,
+                    108,
+                    111
+                  ],
+                  "top_logprobs": [
+                    {
+                      "token": "Hello",
+                      "logprob": -0.47408080101013184,
+                      "bytes": [
+                        72,
+                        101,
+                        108,
+                        108,
+                        111
+                      ]
+                    },
+                    {
+                      "token": "Hi",
+                      "logprob": -0.9740808010101318,
+                      "bytes": [
+                        72,
+                        105
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "token": "!",
+                  "logprob": -0.0000062729995988775045,
+                  "bytes": [
+                    33
+                  ],
+                  "top_logprobs": [
+                    {
+                      "token": "!",
+                      "logprob": -0.0000062729995988775045,
+                      "bytes": [
+                        33
+                      ]
+                    },
+                    {
+                      "token": " there",
+                      "logprob": -12.000006675720215,
+                      "bytes": [
+                        32,
+                        116,
+                        104,
+                        101,
+                        114,
+                        101
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "token": " How",
+                  "logprob": -0.0000018624639324116288,
+                  "bytes": [
+                    32,
+                    72,
+                    111,
+                    119
+                  ],
+                  "top_logprobs": [
+                    {
+                      "token": " How",
+                      "logprob": -0.0000018624639324116288,
+                      "bytes": [
+                        32,
+                        72,
+                        111,
+                        119
+                      ]
+                    },
+                    {
+                      "token": " What",
+                      "logprob": -13.250001907348633,
+                      "bytes": [
+                        32,
+                        87,
+                        104,
+                        97,
+                        116
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "token": " can",
+                  "logprob": -0.000003531315314830863,
+                  "bytes": [
+                    32,
+                    99,
+                    97,
+                    110
+                  ],
+                  "top_logprobs": [
+                    {
+                      "token": " can",
+                      "logprob": -0.000003531315314830863,
+                      "bytes": [
+                        32,
+                        99,
+                        97,
+                        110
+                      ]
+                    },
+                    {
+                      "token": " may",
+                      "logprob": -12.625003814697266,
+                      "bytes": [
+                        32,
+                        109,
+                        97,
+                        121
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "token": " I",
+                  "logprob": 0,
+                  "bytes": [
+                    32,
+                    73
+                  ],
+                  "top_logprobs": [
+                    {
+                      "token": " I",
+                      "logprob": 0,
+                      "bytes": [
+                        32,
+                        73
+                      ]
+                    },
+                    {
+                      "token": " assist",
+                      "logprob": -23.5,
+                      "bytes": [
+                        32,
+                        97,
+                        115,
+                        115,
+                        105,
+                        115,
+                        116
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "token": " assist",
+                  "logprob": -0.0021852378267794847,
+                  "bytes": [
+                    32,
+                    97,
+                    115,
+                    115,
+                    105,
+                    115,
+                    116
+                  ],
+                  "top_logprobs": [
+                    {
+                      "token": " assist",
+                      "logprob": -0.0021852378267794847,
+                      "bytes": [
+                        32,
+                        97,
+                        115,
+                        115,
+                        105,
+                        115,
+                        116
+                      ]
+                    },
+                    {
+                      "token": " help",
+                      "logprob": -6.127185344696045,
+                      "bytes": [
+                        32,
+                        104,
+                        101,
+                        108,
+                        112
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "token": " you",
+                  "logprob": 0,
+                  "bytes": [
+                    32,
+                    121,
+                    111,
+                    117
+                  ],
+                  "top_logprobs": [
+                    {
+                      "token": " you",
+                      "logprob": 0,
+                      "bytes": [
+                        32,
+                        121,
+                        111,
+                        117
+                      ]
+                    },
+                    {
+                      "token": " today",
+                      "logprob": -24.125,
+                      "bytes": [
+                        32,
+                        116,
+                        111,
+                        100,
+                        97,
+                        121
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "token": " today",
+                  "logprob": 0,
+                  "bytes": [
+                    32,
+                    116,
+                    111,
+                    100,
+                    97,
+                    121
+                  ],
+                  "top_logprobs": [
+                    {
+                      "token": " today",
+                      "logprob": 0,
+                      "bytes": [
+                        32,
+                        116,
+                        111,
+                        100,
+                        97,
+                        121
+                      ]
+                    },
+                    {
+                      "token": "?",
+                      "logprob": -18.5,
+                      "bytes": [
+                        63
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "token": "?",
+                  "logprob": -6.704273118884885e-7,
+                  "bytes": [
+                    63
+                  ],
+                  "top_logprobs": [
+                    {
+                      "token": "?",
+                      "logprob": -6.704273118884885e-7,
+                      "bytes": [
+                        63
+                      ]
+                    },
+                    {
+                      "token": "?\n",
+                      "logprob": -14.250000953674316,
+                      "bytes": [
+                        63,
+                        10
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "refusal": null
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9,
+          "completion_tokens": 10,
+          "total_tokens": 19,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_eb9dce56a8"
+      }
+    },
+    "function_call": {
+      "reverse": {
+        "id": "chatcmpl-123",
+        "object": "chat.completion",
+        "created": 1677652288,
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "I'm unable to provide real-time information, including current weather conditions. However, you can easily check the weather in Boston today by using a weather website like Weather.com or a weather app on your smartphone. Alternatively, you can ask a voice assistant like Siri, Google Assistant, or Alexa for the latest updates. Let me know if you'd like help with anything else!"
+            }
+          }
+        ]
+      },
+      "official": {
+        "id": "chatcmpl-B5oYcSyY7aWHMWXZ5Fv3ZA8984P38",
+        "object": "chat.completion",
+        "created": 1740725682,
+        "model": "gpt-4o-2024-11-20",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": null,
+              "tool_calls": [
+                {
+                  "id": "call_sZxRdvpwKMvwyJtj6NMVDVzz",
+                  "type": "function",
+                  "function": {
+                    "name": "get_current_weather",
+                    "arguments": "{\"location\":\"Boston, MA\"}"
+                  }
+                }
+              ],
+              "refusal": null
+            },
+            "logprobs": null,
+            "finish_reason": "tool_calls"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 80,
+          "completion_tokens": 18,
+          "total_tokens": 98,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_7c1f2cecc3"
+      }
+    },
+    "response_format": {
+      "reverse": {
+        "id": "chatcmpl-ROdemkVP3dCjKqoarimhx09pnpqQ0",
+        "object": "chat.completion",
+        "created": 1740729771,
+        "model": "gpt-4o-2024-11-20",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "好的，我给你取一个名字叫 **晨曦**，寓意着清晨的第一缕阳光，充满希望和活力。年龄的话，就设定为 **25 岁**，正值青春年华，充满无限可能！😊",
+              "refusal": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "system_fingerprint": "fp_6807a54d31"
+      },
+      "official": {
+        "id": "chatcmpl-B5pcqTv3SEQcQUIFZTG3INF4dl30I",
+        "object": "chat.completion",
+        "created": 1740729788,
+        "model": "gpt-4o-2024-11-20",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\"name\":\"小明\",\"age\":25}",
+              "refusal": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 51,
+          "completion_tokens": 11,
+          "total_tokens": 62,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_7c1f2cecc3"
+      }
+    },
+    "n": {
+      "reverse": {
+        "id": "chatcmpl-SRRSjviQNd1eCUHHQWbN4rumeX3ct",
+        "object": "chat.completion",
+        "created": 1740679079,
+        "model": "gpt-4o-2024-11-20",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "Got it! How can I assist you today? 😊",
+              "refusal": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "system_fingerprint": "fp_45b1fb6a83"
+      },
+      "official": {
+        "id": "chatcmpl-B5cPnUjHj3f0s39DpKbu0xHA7ZCmS",
+        "object": "chat.completion",
+        "created": 1740679007,
+        "model": "gpt-4o-2024-11-20",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "Hello! 😊 How can I assist you today?",
+              "refusal": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          },
+          {
+            "index": 1,
+            "message": {
+              "role": "assistant",
+              "content": "Hi there! How can I assist you today? 😊",
+              "refusal": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 9,
+          "completion_tokens": 23,
+          "total_tokens": 32,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_4dd9e4e381"
+      }
+    },
+    "image_url": {
+      "reverse": {
+        "choices": [
+          {
+            "finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "content": "很抱歉，我无法查看或分析图片。如果你能描述一下图片的内容或提供一些详细信息，我会尽力帮助你解答相关问题！",
+              "role": "assistant"
+            }
+          }
+        ],
+        "created": 1740720538,
+        "id": "chatcmpl-B5nDvCe77Y07LferKAyvNEa82ETAI",
+        "model": "gpt-4o-2024-11-20",
+        "object": "chat.completion",
+        "usage": {
+          "completion_tokens": 52,
+          "prompt_tokens": 8,
+          "total_tokens": 60
+        }
+      },
+      "official": {
+        "id": "chatcmpl-B5ny062ZzdKkkR3lDxsTvFtvcjNXr",
+        "object": "chat.completion",
+        "created": 1740723412,
+        "model": "gpt-4o-2024-11-20",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "这是一张谷歌（Google）标志的图片。",
+              "refusal": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 452,
+          "completion_tokens": 14,
+          "total_tokens": 466,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_4dd9e4e381"
+      }
+    },
+    "stop": {
+      "reverse": {
+        "id": "chatcmpl-bb5034c3-2e24-4ed1-b733-12e66505ce1a",
+        "object": "chat.completion",
+        "created": 1740734955,
+        "system_fingerprint": "fp_d5139097a00d",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "Sure! Here you go:\n\n1, 2, 3, 4, 5, 6, 7, 8, 9, 10."
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 7,
+          "completion_tokens": 35,
+          "total_tokens": 42
+        }
+      },
+      "official": {
+        "id": "chatcmpl-B5cNThpGsSY90qFeJYEs1SkG6D073",
+        "object": "chat.completion",
+        "created": 1740678863,
+        "model": "gpt-4o-2024-08-06",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "Certainly! Here you go:\n\n1, 2, 3, ",
+              "refusal": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 14,
+          "completion_tokens": 15,
+          "total_tokens": 29,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_b491d0b9e9"
+      }
+    },
+    "reasoning_max_tokens": {
+      "reverse": {
+        "id": "1c24e05b-b008-435a-9a93-6a14218b13c0",
+        "object": "chat.completion",
+        "created": 1743440167261,
+        "model": "o3-mini",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "## Thought:\n\n\n\nReasoned about output repetition for a few seconds\n\n\n\n## Answer:\n\ndeepseek number 1  \ndeepseek number 1  \ndeepseek number 1  \ndeepseek number 1  \ndeepseek number 1"
+            },
+            "finish_reason": "stop"
+          }
+        ]
+      },
+      "official": {
+        "id": "gen-1743440107-lNK2x8KVMirOwk3NYukG",
+        "provider": "OpenAI",
+        "model": "openai/o3-mini",
+        "object": "chat.completion",
+        "created": 1743440107,
+        "choices": [
+          {
+            "logprobs": null,
+            "finish_reason": "length",
+            "native_finish_reason": "length",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "",
+              "refusal": null
+            }
+          }
+        ],
+        "system_fingerprint": "fp_617f206dd9",
+        "usage": {
+          "prompt_tokens": 17,
+          "completion_tokens": 10,
+          "total_tokens": 27,
+          "prompt_tokens_details": {
+            "cached_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 10
+          }
+        }
+      }
+    }
+  },
+  "claude": {
+    "max_tokens": {
+      "reverse": {
+        "id": "chatcmpl-ac3e1f9d84a441e189f463d9e373b",
+        "object": "chat.completion",
+        "created": 1740740434,
+        "model": "claude-3-5-sonnet-20241022",
+        "system_fingerprint": "fp_a24b4d720c",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "你可以通过简单的循环来实现这个输出。你可以想象一个循环结构，重复输出字符串 'deepseek number 1' 五次。每次循环都会打印这个字符串，直到达到五次为止。"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 8,
+          "completion_tokens": 23,
+          "total_tokens": 31
+        }
+      },
+      "official": {
+        "id": "chatcmpl-beiu3LcIeCg5JyJwebH650FToElv6",
+        "object": "chat.completion",
+        "created": 1740740337,
+        "model": "claude-3-5-sonnet-20241022",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "Here are 5 repetitions of '",
+              "refusal": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 22,
+          "completion_tokens": 10,
+          "total_tokens": 32
+        }
+      }
+    },
+    "stop": {
+      "reverse": {
+        "id": "chatcmpl-62b7e2cfd5a345b9b572182c8670b",
+        "object": "chat.completion",
+        "created": 1740740227,
+        "model": "claude-3-5-sonnet-20241022",
+        "system_fingerprint": "fp_a24b4d720c",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "Here is the count from 1 to 10 using Arabic numerals:\n\n1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 23,
+          "total_tokens": 33
+        }
+      },
+      "official": {
+        "id": "chatcmpl-EG0noygvQICNxMc7oTJobFt9r09ZP",
+        "object": "chat.completion",
+        "created": 1740740283,
+        "model": "claude-3-5-sonnet-20241022",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "1\n2\n3\n",
+              "refusal": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 20,
+          "completion_tokens": 8,
+          "total_tokens": 28
+        }
+      }
+    },
+    "function_call": {
+      "reverse": {
+        "id": "chatcmpl-cf84c54e0443436fa0910dd982772",
+        "object": "chat.completion",
+        "created": 1740740119,
+        "model": "claude-3-5-sonnet-20241022",
+        "system_fingerprint": "fp_a24b4d720c",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "I'm unable to provide real-time information such as current weather conditions. I recommend checking a reliable weather website or app for the latest updates on the weather in Boston."
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 48,
+          "total_tokens": 58
+        }
+      },
+      "official": {
+        "id": "msg_bdrk_01QTe5d7DHQADTBXHDNAVrEH",
+        "model": "claude-3-5-sonnet-20241022",
+        "object": "chat.completion",
+        "created": 1740739157,
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "I'll help you check the current weather in Boston. Let me get that information for you.",
+              "tool_calls": [
+                {
+                  "id": "toolu_bdrk_01LxMrXghyBxrUVhroBzGpJV",
+                  "type": "function",
+                  "function": {
+                    "name": "get_current_weather",
+                    "arguments": "{\"location\":\"Boston, MA\"}"
+                  }
+                }
+              ]
+            },
+            "finish_reason": "tool_use"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 426,
+          "completion_tokens": 77,
+          "total_tokens": 503
+        }
+      }
+    },
+    "reasoning_stop": {
+      "reverse": {
+        "id": "chatcmpl-08c0e27865f14316b8102656455ea53d",
+        "object": "chat.completion",
+        "created": 1743445861,
+        "model": "claude-3-7-sonnet-20250219-thinking",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "以下是从1到10的计数：\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10"
+            }
+          }
+        ]
+      },
+      "official": {
+        "id": "gen-1743445740-2bw4LAyVVgNwDbAG6mNU",
+        "provider": "Google",
+        "model": "anthropic/claude-3.7-sonnet",
+        "object": "chat.completion",
+        "created": 1743445740,
+        "choices": [
+          {
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "stop",
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "Here's counting from 1 to 10:\n\n1\n2\n",
+              "refusal": null,
+              "reasoning": "The human is asking me to count from 1 to 10. This is a simple task where I need to list the numbers in ascending order from 1 to 10.\n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n\nThat's the complete count from 1 to 10."
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 43,
+          "completion_tokens": 100,
+          "total_tokens": 143
+        }
+      }
+    }
+  },
+  "gemini": {
+    "max_tokens": {
+      "reverse": {
+        "id": "chatcmpl-zsFrobjxCsqpeuCNUfJaFBK4OXMTr",
+        "object": "chat.completion",
+        "created": 1740740838,
+        "model": "gemini-2.0-flash-thinking-exp",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "好的，没问题！\n\ndeepseek number 1 deepseek number 1 deepseek number 1 deepseek number 1 deepseek number 1\n\n希望这个输出符合你的要求！ 如果你还有其他指令，尽管告诉我。",
+              "refusal": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "system_fingerprint": "fp_4a61d2ebb8"
+      },
+      "official": {
+        "id": "chatcmpl-0915722c518345f894d9aeb4efc77e28",
+        "model": "gemini-2.0-flash",
+        "object": "chat.completion",
+        "created": 1740741172,
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "deepseek number 1\ndeepseek number "
+            },
+            "finish_reason": "length"
+          }
+        ],
+        "error": null,
+        "usage": {
+          "prompt_tokens": 16,
+          "completion_tokens": 10,
+          "total_tokens": 26,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 0,
+            "audio_tokens": 0,
+            "image_tokens": 0
+          },
+          "completion_tokens_details": {
+            "text_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "codeExecution": {
+      "reverse": {
+        "id": "chatcmpl-JVxi2NwSIJVkwoNzuozEjhVKiOQbU",
+        "object": "chat.completion",
+        "created": 1740742479,
+        "model": "gemini-2.0-flash-thinking-exp",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "The sum of the first 50 prime numbers is a fascinating question! Let's embark on a journey to discover this sum. We'll need to identify those elusive prime numbers first, and then, with a bit of computational magic, we'll add them all up.\n\nHere's a little code snippet in Python to help us on our quest:\n\n```python\ndef is_prime(n):\n    if n <= 1:\n        return False\n    if n <= 3:\n        return True\n    if n % 2 == 0 or n % 3 == 0:\n        return False\n    i = 5\n    while i * i <= n:\n        if n % i == 0 or n % (i + 2) == 0:\n            return False\n        i += 6\n    return True\n\ndef sum_first_n_primes(n):\n    primes = []\n    num = 2\n    while len(primes) < n:\n        if is_prime(num):\n            primes.append(num)\n        num += 1\n    return sum(primes)\n\nnumber_of_primes = 50\nsum_of_primes = sum_first_n_primes(number_of_primes)\nprint(f\"The sum of the first {number_of_primes} prime numbers is: {sum_of_primes}\")\n\n```\n\nWhen we run this code, it diligently calculates and reveals that the sum of the first 50 prime numbers is **24133**.\n\nIsn't it amazing how numbers hold such secrets waiting to be uncovered?  Prime numbers, in particular, have intrigued mathematicians for centuries, and their distribution and properties continue to be a source of wonder and study.",
+              "refusal": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "system_fingerprint": "fp_a713964b2e"
+      },
+      "official": {
+        "id": "chatcmpl-1b79cf65137f4601a498c5c95b701b64",
+        "model": "gemini-2.0-flash",
+        "object": "chat.completion",
+        "created": 1740742508,
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "Okay, I need to calculate the sum of the first 50 prime numbers. Here's my plan:\n\n1.  **Generate Prime Numbers:** Create a function to generate prime numbers. I will iterate through numbers, checking for primality.\n2.  **Store Prime Numbers:** Store the generated prime numbers in a list until I have 50 of them.\n3.  **Sum the Primes:** Calculate the sum of the prime numbers in the list.\n4.  **Output:** Present the sum.\n\nHere's the Python code:\n\n\n```PYTHON\ndef is_prime(n):\n    \"\"\"Check if a number is prime.\"\"\"\n    if n <= 1:\n        return False\n    if n <= 3:\n        return True\n    if n % 2 == 0 or n % 3 == 0:\n        return False\n    i = 5\n    while i * i <= n:\n        if n % i == 0 or n % (i + 2) == 0:\n            return False\n        i += 6\n    return True\n\nprimes = []\nnum = 2\nwhile len(primes) < 50:\n    if is_prime(num):\n        primes.append(num)\n    num += 1\n\nsum_of_primes = sum(primes)\nprint(f'{primes=}')\nprint(f'{sum_of_primes=}')\n\n```\n```output\nprimes=[2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199, 211, 223, 227, 229]\nsum_of_primes=5117\n\n```\nThe sum of the first 50 prime numbers is 5117.\n"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "error": null,
+        "usage": {
+          "prompt_tokens": 31,
+          "completion_tokens": 560,
+          "total_tokens": 1164,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 0,
+            "audio_tokens": 0,
+            "image_tokens": 0
+          },
+          "completion_tokens_details": {
+            "text_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "googleSearch": {
+      "reverse": {
+        "id": "chatcmpl-nOOGow6EqWOsXskZmEMEqxvgfyU7L",
+        "object": "chat.completion",
+        "created": 1740742300,
+        "model": "gemini-2.0-flash-thinking-exp",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "今天是一月二十六号。",
+              "refusal": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "system_fingerprint": "fp_082af1d649"
+      },
+      "official": {
+        "id": "chatcmpl-ee821b0f754d432bac99dddaf0bcc88e",
+        "model": "gemini-2.0-flash",
+        "object": "chat.completion",
+        "created": 1740742342,
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "今天是2025年2月28日。\n"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "error": null,
+        "usage": {
+          "prompt_tokens": 7,
+          "completion_tokens": 14,
+          "total_tokens": 21,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 0,
+            "audio_tokens": 0,
+            "image_tokens": 0
+          },
+          "completion_tokens_details": {
+            "text_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    },
+    "response_format": {
+      "reverse": {
+        "id": "chatcmpl-Jj0K7EANLPteO602hziq673IYnNLC",
+        "object": "chat.completion",
+        "created": 1740741510,
+        "model": "gemini-2.0-flash-thinking-exp",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "当然！ 让我给你一个名字和年龄：\n\n名字： 李明 (Lǐ Míng)\n年龄： 25 岁",
+              "refusal": null
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "total_tokens": 0,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "system_fingerprint": "fp_0cb7f95a34"
+      },
+      "official": {
+        "id": "chatcmpl-9585ed9d59aa42499b5adf73473b7382",
+        "model": "gemini-2.0-flash",
+        "object": "chat.completion",
+        "created": 1740741918,
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"age\": 30,\n  \"name\": \"李明\"\n}"
+            },
+            "finish_reason": "stop"
+          }
+        ],
+        "error": null,
+        "usage": {
+          "prompt_tokens": 10,
+          "completion_tokens": 21,
+          "total_tokens": 31,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "text_tokens": 0,
+            "audio_tokens": 0,
+            "image_tokens": 0
+          },
+          "completion_tokens_details": {
+            "text_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    }
+  }
+}

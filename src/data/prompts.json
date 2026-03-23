@@ -1,0 +1,234 @@
+{
+  "openai": {
+    "image_url": {
+      "content": [
+        {
+          "type": "text",
+          "text": "这是一张什么图片"
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "url": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_light_color_272x92dp.png"
+          }
+        }
+      ],
+      "params": {
+        "max_tokens": 100
+      }
+    },
+    "max_tokens": {
+      "content": "输出 'deepseek number 1' 5次",
+      "params": {
+        "max_tokens": 10
+      }
+    },
+    "reasoning_max_tokens": {
+      "content": "输出 'deepseek number 1' 5次",
+      "params": {
+        "max_tokens": 10
+      }
+    },
+    "logprobs": {
+      "content": "Hello!",
+      "params": {
+        "logprobs": true,
+        "top_logprobs": 2
+      }
+    },
+    "n": {
+      "content": "Hello!",
+      "params": {
+        "n": 2
+      }
+    },
+    "stop": {
+      "content": "Count from 1 to 10",
+      "params": {
+        "stop": [
+          "4"
+        ]
+      }
+    },
+    "function_call": {
+      "content": "Whats the weather like in Boston today?",
+      "params": {
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "get_current_weather",
+              "description": "Get the current weather in a given location",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "location": {
+                    "type": "string",
+                    "description": "The city and state, e.g. San Francisco, CA"
+                  },
+                  "unit": {
+                    "type": "string",
+                    "enum": [
+                      "celsius",
+                      "fahrenheit"
+                    ]
+                  }
+                },
+                "required": [
+                  "location"
+                ]
+              }
+            }
+          }
+        ],
+        "tool_choice": "auto"
+      }
+    },
+    "response_format": {
+      "content": "给我一个名字和年龄吧",
+      "params": {
+        "response_format": {
+          "type": "json_schema",
+          "json_schema": {
+            "name": "user_info",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "age": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "age"
+              ],
+              "additionalProperties": false
+            },
+            "strict": true
+          }
+        }
+      }
+    }
+  },
+  "claude": {
+    "max_tokens": {
+      "content": "输出 'deepseek number 1' 5次",
+      "params": {
+        "max_tokens": 10
+      }
+    },
+    "reasoning_stop": {
+      "content": "Count from 1 to 10 with Arabic numerals",
+      "params": {
+        "stop": ["3"]
+      }
+    },
+    "stop": {
+      "content": "Count from 1 to 10 with Arabic numerals",
+      "params": {
+        "stop": [
+          "4"
+        ]
+      }
+    },
+    "function_call": {
+      "content": "Whats the weather like in Boston today?",
+      "params": {
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "get_current_weather",
+              "description": "Get the current weather in a given location",
+              "parameters": {
+                "type": "object",
+                "properties": {
+                  "location": {
+                    "type": "string",
+                    "description": "The city and state, e.g. San Francisco, CA"
+                  },
+                  "unit": {
+                    "type": "string",
+                    "enum": [
+                      "celsius",
+                      "fahrenheit"
+                    ]
+                  }
+                },
+                "required": [
+                  "location"
+                ]
+              }
+            }
+          }
+        ],
+        "tool_choice": "auto"
+      }
+    }
+  },
+  "gemini": {
+    "max_tokens": {
+      "content": "输出 'deepseek number 1' 5次",
+      "params": {
+        "max_tokens": 10
+      }
+    },
+    "codeExecution": {
+      "content": "What is the sum of the first 50 prime numbers? Generate and run code for the calculation, and make sure you get all 50.",
+      "params": {
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "codeExecution"
+            }
+          }
+        ]
+      }
+    },
+    "googleSearch": {
+      "content": "今天是几月几号.",
+      "params": {
+        "tools": [
+          {
+            "type": "function",
+            "function": {
+              "name": "googleSearch"
+            }
+          }
+        ]
+      }
+    },
+    "response_format": {
+      "content": "给我一个名字和年龄吧",
+      "params": {
+        "response_format": {
+          "type": "json_schema",
+          "json_schema": {
+            "name": "user_info",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "age": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "name",
+                "age"
+              ],
+              "additionalProperties": false
+            },
+            "strict": true
+          }
+        }
+      }
+    }
+  }
+}
